@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Beike Note</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      width: 320px;
+      padding: 16px;
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      color: #1a73e8;
+      font-size: 20px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e1e4e8;
+    }
+
+    #settingsForm {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #444;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #dfe1e5;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #1a73e8;
+      box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+    }
+
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #1557b0;
+    }
+
+    button:active {
+      background-color: #174ea6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Beike Note</h1>
+  <div id="content">
+
+    <form id="settingsForm">
+      <div>
+        <label for="sheetID">Google Sheet ID:</label>
+        <input type="text" id="sheetID" name="sheetID" required>
+      </div>
+      <button type="submit" id="saveButton">Save</button>
+    </form>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

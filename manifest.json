@@ -35,7 +35,6 @@
         "https://*.anjuke.com/*"
       ],
       "js": [
-        "jquery.js",
         "main.js"
       ]
     }
